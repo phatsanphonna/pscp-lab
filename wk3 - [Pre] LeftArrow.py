@@ -1,7 +1,4 @@
-'''
-[Pre] LeftArrow
-[Pre] LeftArrow.py
-'''
+'''Week 3 - [Pre] LeftArrow.py'''
 
 
 def main():

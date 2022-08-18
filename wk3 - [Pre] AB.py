@@ -1,7 +1,4 @@
-'''
-[Pre] AB
-[Pre] AB.py
-'''
+'''Week 3 - [Pre] AB.py'''
 
 
 def main():
