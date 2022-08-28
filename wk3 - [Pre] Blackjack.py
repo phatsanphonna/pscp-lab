@@ -12,11 +12,7 @@ def main():
     for _ in range(total_cards):
         card = input()
 
-        if card.upper() == 'J':
-            cards.append(10)
-        elif card.upper() == 'K':
-            cards.append(10)
-        elif card.upper() == 'Q':
+        if card.upper() == 'J'or card.upper() == 'K' or card.upper() == 'Q':
             cards.append(10)
         elif card.upper() == 'A':
             have_ace += 1
