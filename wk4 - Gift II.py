@@ -21,17 +21,19 @@ def main():
 
     if is_even(gift1):
         print(gift1)
-    if is_even(gift2):
+    elif is_even(gift2):
         print(gift2)
-    if is_even(gift3):
+    elif is_even(gift3):
         print(gift3)
-    if is_even(gift4):
+    elif is_even(gift4):
         print(gift4)
-    if is_even(gift5):
+    elif is_even(gift5):
+        print(gift5)
+    elif is_even(gift6):
         print(gift6)
-    if is_even(gift7):
+    elif is_even(gift7):
         print(gift7)
-    if is_even(gift8):
+    elif is_even(gift8):
         print(gift8)
 
 

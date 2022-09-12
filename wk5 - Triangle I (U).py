@@ -1,5 +1,6 @@
 '''Week 5 - Triangle I'''
 
+import math
 
 def main():
     '''Main Function'''
