@@ -1,4 +1,4 @@
-'''Week 2 - Ratatype'''
+'''Week 3 - Ratatype'''
 
 
 def main():

@@ -1,4 +1,4 @@
-'''Week 7 - RockPaperScissor'''
+'''Week 6 - RockPaperScissor'''
 
 
 def check_winner(p1_action: str, p2_action: str):
