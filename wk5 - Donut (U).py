@@ -10,5 +10,11 @@
 def main():
     '''Main Function'''
 
+    price_per_item = int(input())
+    want_to_buy_total = int(input())
+    extra_dount_total = int(input())
+    get_at_least_total = int(input())
+
+    
 
 main()

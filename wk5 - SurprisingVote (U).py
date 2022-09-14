@@ -4,7 +4,15 @@
 def main():
     '''Main Function'''
 
-    highest_vote = int(input())
-    lowest_vote = int(input())
+    total_vote = float(input())
+    highest_vote = float(input())
+
+    average_of_2_votes = (total_vote - highest_vote) / 2
+
+    if highest_vote - average_of_2_votes >= 2:
+        print('Surprising')
+    else:
+        print('Not surprising')
+
 
 main()
