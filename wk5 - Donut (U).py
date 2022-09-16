@@ -15,6 +15,5 @@ def main():
     extra_dount_total = int(input())
     get_at_least_total = int(input())
 
-    
 
 main()
