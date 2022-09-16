@@ -4,7 +4,7 @@
 def main():
     '''Main Function'''
 
-    cards = []
+    total_score = 0
     have_ace = 0
 
     total_cards = int(input())
@@ -12,15 +12,13 @@ def main():
     for _ in range(total_cards):
         card = input()
 
-        if card.upper() == 'J' or card.upper() == 'K' or card.upper() == 'Q':
-            cards.append(10)
+        if card.upper() in 'JKQ':
+            total_score += 10
         elif card.upper() == 'A':
-            cards.append(11)
+            total_score += 11
             have_ace += 1
         else:
-            cards.append(int(card))
-
-    total_score = sum(cards)
+            total_score += int(card)
 
     if not have_ace:
         print(total_score)
