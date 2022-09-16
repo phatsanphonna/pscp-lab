@@ -12,9 +12,10 @@ def main():
     for _ in range(total_cards):
         card = input()
 
-        if card.upper() == 'J'or card.upper() == 'K' or card.upper() == 'Q':
+        if card.upper() == 'J' or card.upper() == 'K' or card.upper() == 'Q':
             cards.append(10)
         elif card.upper() == 'A':
+            cards.append(11)
             have_ace += 1
         else:
             cards.append(int(card))
@@ -26,10 +27,8 @@ def main():
         return
 
     for _ in range(have_ace):
-        if total_score + 11 > 21:
-            total_score += 1
-        else:
-            total_score += 11
+        if total_score > 21:
+            total_score -= 10
 
     print(total_score)
 
