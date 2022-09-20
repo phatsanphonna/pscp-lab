@@ -1,4 +1,7 @@
-'''Week 6 - Frame'''
+'''
+[Recommend]
+Week 6 - Frame
+'''
 
 
 def main():
@@ -9,4 +12,6 @@ def main():
     print("*"*sentence_len)
     print("*"+str(sentence)+"*")
     print("*"*sentence_len)
+
+
 main()

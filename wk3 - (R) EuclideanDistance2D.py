@@ -1,4 +1,7 @@
-'''Week 3 - EuclideanDistance2D'''
+'''
+[Recommend]
+Week 3 - EuclideanDistance2D
+'''
 
 
 def find_combine_value(x1_val, y1_val):

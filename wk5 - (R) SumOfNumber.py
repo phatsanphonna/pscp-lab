@@ -1,4 +1,7 @@
-'''Week 5 - SumOfNumber'''
+'''
+[Recommend]
+Week 5 - SumOfNumber
+'''
 
 
 def main():

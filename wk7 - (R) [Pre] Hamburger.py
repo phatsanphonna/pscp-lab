@@ -1,4 +1,7 @@
-'''Week 3 - [Pre] Hamburger.py'''
+'''
+[Recommend]
+Week 7 - [Pre week 3] Hamburger.py
+'''
 
 
 def main():
