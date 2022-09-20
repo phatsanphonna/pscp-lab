@@ -9,27 +9,24 @@ def main():
 
     number_list = []
 
-    while True:
+    looping = True
+
+    while looping:
         number = input()
 
-        if number == '0':
-            break
+        if int(number) == 0:
+            looping = False
 
-        number_array = [0, 0]
+        while int(number) < 10:
+            total = 0
 
-        while len(number_array) > 1:
-            for n in number:
-                number_array.append(int(n))
+            for n in str(number):
+                total += int(n)
 
-            print(number_array)
+            number = total
 
-            total_value = sum(number_array)
+        number_list.append(number)
 
-            print('Total value: %d' % total_value)
-
-            number_array = [int(i) for i in str(total_value)]
-
-        number_list.append(number_array[0])
 
     print(*number_list, sep='\n')
 
