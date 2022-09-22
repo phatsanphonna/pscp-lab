@@ -4,17 +4,15 @@
 def find_last_digit(number: int):
     '''Find last digit'''
 
-    mod_value = number // 7
+    mod_value = number % 4
 
-    last_digit = int(str(mod_value)[-1])
-
-    if last_digit == 1:
+    if mod_value == 1:
         print(7)
-    elif last_digit == 7:
+    elif mod_value == 2:
         print(9)
-    elif last_digit == 9:
+    elif mod_value == 3:
         print(3)
-    elif last_digit == 3:
+    elif mod_value == 0:
         print(1)
 
 

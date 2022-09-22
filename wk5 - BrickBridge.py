@@ -15,4 +15,10 @@ def main():
 
     small_brick_use = goal - large_brick * 5
 
-    if ()
+    if small_brick_use > small_brick:
+        print(-1)
+    else:
+        print(small_brick_use)
+
+
+main()
