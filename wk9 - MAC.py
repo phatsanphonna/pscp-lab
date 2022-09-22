@@ -7,7 +7,7 @@ wk9 - MAC
 BASE16_CHAR = '0123456789abcdef'
 
 
-def show_result(valid_1, valid_2, valid_3, is_error):
+def show_result(valid_1: bool, valid_2: bool, valid_3: bool, is_error: bool):
     '''Show result'''
 
     if is_error:
