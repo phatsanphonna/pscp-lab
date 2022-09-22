@@ -33,7 +33,7 @@ def check_seperator(valid_seperator: int, count: int):
 def check_valid_1(mac_address: str):
     '''Check that if MAC address is equal to type 1'''
 
-    seperator_position = [2, 5, 8, 11, 14]
+    seperator_position = '2 5 8 11 14'
 
     mac_address_length = len(mac_address)
 
@@ -43,7 +43,7 @@ def check_valid_1(mac_address: str):
     for i in range(mac_address_length):
         char = mac_address[i]
 
-        if char == '-' and i in seperator_position:
+        if char == '-' and str(i) in seperator_position:
             valid_seperator += 1
         elif char.lower() not in BASE16_CHAR:
             return False
@@ -54,7 +54,7 @@ def check_valid_1(mac_address: str):
 def check_valid_2(mac_address: str):
     '''Check that if MAC address is equal to type 2'''
 
-    seperator_position = [2, 5, 8, 11, 14]
+    seperator_position = '2 5 8 11 14'
 
     mac_address_length = len(mac_address)
 
@@ -64,7 +64,7 @@ def check_valid_2(mac_address: str):
     for i in range(mac_address_length):
         char = mac_address[i]
 
-        if char == ':' and i in seperator_position:
+        if char == ':' and str(i) in seperator_position:
             valid_seperator += 1
         elif char.lower() not in BASE16_CHAR:
             return False
@@ -75,7 +75,7 @@ def check_valid_2(mac_address: str):
 def check_valid_3(mac_address: str):
     '''Check that if MAC address is equal to type 2'''
 
-    seperator_position = [4, 9]
+    seperator_position = '4 9'
 
     mac_address_length = len(mac_address)
 
@@ -85,7 +85,7 @@ def check_valid_3(mac_address: str):
     for i in range(mac_address_length):
         char = mac_address[i]
 
-        if char == '.' and i in seperator_position:
+        if char == '.' and str(i) in seperator_position:
             valid_seperator += 1
         elif char.lower() not in BASE16_CHAR:
             return False
