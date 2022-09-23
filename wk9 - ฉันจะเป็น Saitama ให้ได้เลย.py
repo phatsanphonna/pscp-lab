@@ -1,21 +1,18 @@
 '''Week 9 - ฉันจะเป็น Saitama ให้ได้เลย'''
 
 
-import math
-
-
 def main():
     '''Main Function'''
 
-    require_pushup = int(input())
-    require_situp = int(input())
-    require_looknang = int(input())
-    require_running = int(input())
+    require_pushup = abs(int(input()))
+    require_situp = abs(int(input()))
+    require_looknang = abs(int(input()))
+    require_running = abs(int(input()))
 
-    pushup_per_day = int(input())
-    situp_per_day = int(input())
-    looknang_per_day = int(input())
-    running_per_day = int(input())
+    pushup_per_day = abs(int(input()))
+    situp_per_day = abs(int(input()))
+    running_per_day = abs(int(input()))
+    looknang_per_day = abs(int(input()))
 
     total_days = 0
 

@@ -16,26 +16,24 @@ def main():
     discount = 1 - float(input()) / 100  # จะได้ลด c%
     order_more_price = float(input())  # ถ้าสั่งอาหารราคา d บาทเพิ่ม
 
-    if order_until_price == 0 or order_more_price == 0:
-        print('Yes')
-        return
+    if total_order_price + order_more_price >= order_until_price:
+        discount_price = (total_order_price + order_more_price) * discount
+    else:
+        discount_price = total_order_price + order_more_price
 
     if total_order_price >= order_until_price:
-        total_order_price = total_order_price * discount
+        non_discount_price = total_order_price * discount
+    else:
+        non_discount_price = total_order_price
 
-    total_to_pay = total_order_price + order_more_price
-    discount_price = total_to_pay * discount
+    different_price = abs(discount_price - non_discount_price)
 
-    if total_to_pay < order_until_price:
+    if discount_price < non_discount_price:
+        print('Yes %.3f' % different_price)
+    elif discount_price > non_discount_price:
+        print('No %.3f' % different_price)
+    else:
         print('Yes')
-        return
-
-    if discount_price == total_order_price:
-        print('Yes')
-    elif discount_price > total_order_price:
-        print('No %.3f' % (discount_price - total_order_price))
-    elif discount_price < total_order_price:
-        print('Yes %.3f' % (total_order_price - discount_price))
 
 
 main()
