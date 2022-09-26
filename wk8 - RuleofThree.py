@@ -11,13 +11,19 @@ def main():
 
     best_price_per_weight = 0
 
-    for _ in range(total_pieces):
-        price = int(input())
+    for i in range(total_pieces):
+        price = float(input())
         weight = float(input())
 
         price_per_weight = price / weight
 
-        if price_per_weight > best_price_per_weight:
+        if i == 0:
+            best_price_per_weight = price_per_weight
+            best_snack_price = price
+            best_snack_weight = weight
+            continue
+
+        if price_per_weight < best_price_per_weight:
             best_price_per_weight = price_per_weight
 
             best_snack_price = price

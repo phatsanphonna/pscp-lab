@@ -1,10 +1,13 @@
-"""Align"""
+"""Week 7 - Align"""
+
 
 def main():
-    """Align"""
+    """Main Function"""
+
     size = int(input())
     align = input().lower()
     sentence = input()
+
     if align == "left":
         print(sentence+(" "*(size-(len(sentence)))))
     elif align == "center":
@@ -15,4 +18,6 @@ def main():
             print(sentence.center(size))
     elif align == "right":
         print((" "*(size-(len(sentence))))+sentence)
+
+
 main()
