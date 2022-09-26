@@ -1,7 +1,11 @@
 '''Week 8 - FourDirections'''
 
 
+def second_line(char: str):
+    '''Print second line out to screen'''
 
+    if char == 'U':
+        print(' *** ')
 
 def main():
     '''Main Function'''
@@ -9,12 +13,15 @@ def main():
     sequence = input()
     sequence_length = len(sequence)
 
-    for i in range(sequence_length):
-        if i + 1 == sequence_length:
+    for index in range(sequence_length):
+        if index + 1 == sequence_length:
             print('  *  ')
         else:
             print('  *  ', end=' ')
     
     for index, char in enumerate(sequence):
         if index + 1 == sequence_length:
-            if 
+            print('  *  ')
+        else:
+            print('  *  ', end=' ')
+        
