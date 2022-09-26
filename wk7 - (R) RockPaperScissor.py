@@ -6,10 +6,10 @@ Week 6 - RockPaperScissor
 
 def check_winner(p1_action: str, p2_action: str):
     '''
-    Check who is winner\n
+    Check who is winner
 
-    If player 1 wins will return 1,\n
-    Else if player 2 wins will return 2,\n
+    If player 1 wins will return 1,
+    Else if player 2 wins will return 2,
     Else if draws will return 999
     '''
 
