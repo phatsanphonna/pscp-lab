@@ -18,14 +18,10 @@ def main():
 
     while require_pushup > 0 or require_situp > 0 \
             or require_looknang > 0 or require_running > 0:
-        if require_pushup > 0:
-            require_pushup -= pushup_per_day
-        if require_situp > 0:
-            require_situp -= situp_per_day
-        if require_looknang > 0:
-            require_looknang -= looknang_per_day
-        if require_running > 0:
-            require_running -= running_per_day
+        require_pushup -= pushup_per_day
+        require_situp -= situp_per_day
+        require_looknang -= looknang_per_day
+        require_running -= running_per_day
 
         total_days += 1
 
