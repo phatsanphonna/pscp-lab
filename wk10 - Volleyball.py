@@ -3,6 +3,36 @@ Midterm 6 - Volleyball
 Week 10 - Volleyball
 '''
 
+DEAL_SCORE = 24
+WIN_SCORE = 25
+
+LAST_SET = 5
+LAST_SET_DEAL_SCORE = 14
+LAST_SET_WIN_SCORE = 15
+
+WIN_SET = 3
+
+
+def display_win_message(team: str, lose_set: int):
+    '''Display win message'''
+
+    print('%s won 3:%d set' % (team, lose_set))
+
+
+def display_game_running_message():
+    '''Display game is currently running message'''
+
+    print('The game has not finished yet.')
+
+
+def display_set_info(set_indicator: int, a_score: int, b_score, is_running: bool=True):
+    '''Disply info of set'''
+
+    print('Set %d: A (%d) | B (%d)' % (set_indicator, a_score, b_score))
+
+    if is_running:
+        display_game_running_message()
+
 
 def check_deal_mode(a_score: int, b_score: int, score: int):
     '''Check that sequence is going to enter deal mode'''
@@ -27,12 +57,6 @@ def check_deal_win(a_score: int, b_score: int):
     return abs(a_score - b_score) == 2
 
 
-def set_default_score():
-    '''Set score to default'''
-
-    return 0, 0
-
-
 def main():
     '''Main Function'''
 
@@ -48,84 +72,117 @@ def main():
 
     deal_mode = False
 
+    def set_default_score():
+        '''Set score to default'''
+
+        nonlocal a_score, b_score
+
+        a_score = 0
+        b_score = 0
+
     for score in sequence:
+        if not set_indicator:
+            break
+
         a_score, b_score = check_score(a_score, b_score, score)
 
-        if set_indicator == 5:
-            if check_deal_mode(a_score, b_score, 14):
-                deal_mode == True
-                continue
-
+        # If this score is in last set
+        if set_indicator is LAST_SET:
             if deal_mode:
                 if check_deal_win(a_score, b_score):
-                    print('Set %d: A (%d) | B (%d)' %
-                          (set_indicator, a_score, b_score))
+                    display_set_info(set_indicator, a_score,
+                                     b_score, is_running=False)
 
                     if a_score > b_score:
                         a_set += 1
-                        a_score, b_score = set_default_score()
+                        set_default_score()
                     else:
                         b_set += 1
-                        a_score, b_score = set_default_score()
+                        set_default_score()
 
                     deal_mode = False
+                    set_indicator = 0
+
                     break
+
                 continue
 
-            if a_score == 15 and b_score < 15:
+            if a_score == LAST_SET_WIN_SCORE and b_score < LAST_SET_WIN_SCORE:
                 a_set += 1
-                print('Set %d: A (15) | B (%d)' % (set_indicator, b_score))
-                a_score, b_score = set_default_score()
-            elif b_score == 15 and a_score < 15:
+
+                display_set_info(
+                    set_indicator, LAST_SET_WIN_SCORE, b_score, is_running=False)
+
+                set_default_score()
+
+                set_indicator = 0
+            elif b_score == LAST_SET_WIN_SCORE and a_score < LAST_SET_WIN_SCORE:
                 b_set += 1
-                print('Set %d: A (%d) | B (15)' % (set_indicator, a_score))
-                a_score, b_score = set_default_score()
+
+                display_set_info(set_indicator, a_score,
+                                 LAST_SET_WIN_SCORE, is_running=False)
+
+                set_default_score()
+                set_indicator = 0
+
+            deal_mode = check_deal_mode(a_score, b_score, LAST_SET_DEAL_SCORE)
 
             continue
 
         if deal_mode:
             if check_deal_win(a_score, b_score):
-                print('Set %d: A (%d) | B (%d)' %
-                      (set_indicator, a_score, b_score))
+                display_set_info(set_indicator, a_score,
+                                 b_score, is_running=False)
 
                 set_indicator += 1
 
                 if a_score > b_score:
                     a_set += 1
-                    a_score, b_score = set_default_score()
+                    set_default_score()
                 else:
                     b_set += 1
-                    a_score, b_score = set_default_score()
-        
-        deal_mode = check_deal_mode(a_score, b_score, 24)
+                    set_default_score()
 
-        if a_score == 25 and b_score < 25:
+                deal_mode = False
+
+            continue
+
+        if a_score == WIN_SCORE and b_score < WIN_SCORE:
             a_set += 1
-            print('Set %d: A (25) | B (%d)' % (set_indicator, b_score))
+
+            display_set_info(set_indicator, WIN_SCORE,
+                             b_score, is_running=False)
 
             set_indicator += 1
-            a_score, b_score = set_default_score()
-        elif b_score == 25 and a_score < 25:
+            set_default_score()
+        elif b_score == WIN_SCORE and a_score < WIN_SCORE:
             b_set += 1
-            print('Set %d: A (%d) | B (25)' % (set_indicator, a_score))
+
+            display_set_info(set_indicator, a_score,
+                             WIN_SCORE, is_running=False)
 
             set_indicator += 1
-            a_score, b_score = set_default_score()
-        
+            set_default_score()
 
-    if a_score != 0 or b_score != 0:
-        print('Set %d: A (%d) | B (%d)' % (set_indicator, a_score, b_score))
-        print('The gane has not finished yet.')
+        deal_mode = check_deal_mode(a_score, b_score, DEAL_SCORE)
+
+    # If A win the game
+    if a_set == WIN_SET:
+        display_win_message('A', b_set)
+        return
+    # If B win the game
+    elif b_set == WIN_SET:
+        display_win_message('B', a_set)
         return
 
-    if a_set == 3:
-        print('A won 3:%d set' % b_set)
-    elif b_set == 3:
-        print('A won 3:%d set' % a_set)
+    # If game is currently running in any set
+    if a_score != 0 or b_score != 0:
+        display_set_info(set_indicator, a_score, b_score)
+        return
 
-    if a_score == 0 and b_score == 0:
-        print('Set %d: A (0) | D (0)' % set_indicator)
-        print('The gane has not finished yet.')
+    # If game is currently running a new set
+    if set_indicator != 0 and a_score == 0 and b_score == 0:
+        display_set_info(set_indicator, 0, 0)
         return
 
 
