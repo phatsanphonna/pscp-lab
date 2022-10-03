@@ -1,4 +1,7 @@
-'''Week 8 - Inflation'''
+'''
+Week 8 - Inflation
+https://ejudge.it.kmitl.ac.th/problem/8233
+'''
 
 
 INFLATION_RATE = 0.0381

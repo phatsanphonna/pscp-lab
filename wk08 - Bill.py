@@ -1,4 +1,7 @@
-'''Week 8 - Bill'''
+'''
+Week 8 - Bill
+https://ejudge.it.kmitl.ac.th/problem/8231
+'''
 
 
 def main():

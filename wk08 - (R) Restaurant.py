@@ -1,6 +1,7 @@
 '''
 [Recommend]
 Week 8 - Restaurant
+https://ejudge.it.kmitl.ac.th/problem/8235
 กูขอเหอะ จงทำได้แบบไม่มีอุปสรรคด้วยเถิด สาธุ
 '''
 

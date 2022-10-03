@@ -1,4 +1,7 @@
-'''Week 9 - BigFrame'''
+'''
+Week 9 - BigFrame
+https://ejudge.it.kmitl.ac.th/problem/8251
+'''
 
 
 def line(length: int):

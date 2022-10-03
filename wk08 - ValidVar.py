@@ -1,4 +1,7 @@
-'''Week 8 - ValidVar'''
+'''
+Week 8 - ValidVar
+https://ejudge.it.kmitl.ac.th/problem/8227
+'''
 
 
 # เนื้อหาในวันนี้คือการตั้งชื่อตัวแปร

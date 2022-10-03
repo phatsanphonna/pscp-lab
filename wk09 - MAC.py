@@ -1,5 +1,6 @@
 '''
 wk9 - MAC
+https://ejudge.it.kmitl.ac.th/problem/8264
 ไอเหี้ย ในที่สุดกูก็แก้โจทย์นี้ได้สักที
 แก้ได้สำเร็จตอน 22/09/2022 13:01:13
 '''
@@ -30,7 +31,7 @@ def check_seperator(valid_seperator: int, count: int):
     return valid_seperator == count
 
 
-def check_valid_1_2(mac_address: str, seperator: str):
+def check_valid(mac_address: str, seperator: str):
     '''Check that if MAC address is equal to type 1 or type 2'''
 
     seperator_position = '2 5 8 11 14'
@@ -52,7 +53,7 @@ def check_valid_1_2(mac_address: str, seperator: str):
 
 
 def check_valid_3(mac_address: str):
-    '''Check that if MAC address is equal to type 2'''
+    '''Check that if MAC address is equal to type 3'''
 
     seperator_position = '4 9'
 
@@ -92,8 +93,8 @@ def main():
         print('ERROR')
         return
 
-    valid_1 = check_valid_1_2(mac_address, '-')
-    valid_2 = check_valid_1_2(mac_address, ':')
+    valid_1 = check_valid(mac_address, '-')
+    valid_2 = check_valid(mac_address, ':')
     valid_3 = check_valid_3(mac_address)
 
     if valid_1 or valid_2:

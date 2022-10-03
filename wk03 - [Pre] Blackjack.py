@@ -1,4 +1,8 @@
-'''Week 3 - [Pre] Blackjack.py'''
+'''
+Week 3 - [Pre] Blackjack.py
+Week 8 - Blackjack.py
+https://ejudge.it.kmitl.ac.th/problem/8236
+'''
 
 
 def main():

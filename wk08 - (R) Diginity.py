@@ -1,6 +1,7 @@
 '''
 [Recommend]
 Week 8 - Diginity
+https://ejudge.it.kmitl.ac.th/problem/8237
 '''
 
 

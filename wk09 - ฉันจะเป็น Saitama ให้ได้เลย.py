@@ -1,4 +1,7 @@
-'''Week 9 - ฉันจะเป็น Saitama ให้ได้เลย'''
+'''
+Week 9 - ฉันจะเป็น Saitama ให้ได้เลย
+https://ejudge.it.kmitl.ac.th/problem/8259
+'''
 
 
 def main():

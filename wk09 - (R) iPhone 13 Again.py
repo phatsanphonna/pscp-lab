@@ -1,6 +1,7 @@
 '''
 [Recommend]
 Week 9 - iPhone 13 Again
+https://ejudge.it.kmitl.ac.th/problem/8260
 '''
 
 

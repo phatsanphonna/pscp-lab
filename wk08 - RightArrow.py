@@ -1,4 +1,7 @@
-'''Week 8 - RightArrow.py'''
+'''
+Week 8 - RightArrow.py
+https://ejudge.it.kmitl.ac.th/problem/8242
+'''
 
 
 def main():

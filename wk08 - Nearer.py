@@ -1,4 +1,7 @@
-'''Week 8 - Nearer'''
+'''
+Week 8 - Nearer
+https://ejudge.it.kmitl.ac.th/problem/8232
+'''
 
 
 def main():

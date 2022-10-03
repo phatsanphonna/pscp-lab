@@ -1,6 +1,7 @@
 '''
 [Recommend]
 Week 8 - Milk (U)
+https://ejudge.it.kmitl.ac.th/problem/8238
 - โดน Timeout
 '''
 

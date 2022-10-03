@@ -1,4 +1,7 @@
-'''Week 8 - SecondConverter'''
+'''
+Week 8 - SecondConverter
+https://ejudge.it.kmitl.ac.th/problem/8248
+'''
 
 
 def main():

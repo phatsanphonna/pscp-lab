@@ -1,6 +1,7 @@
 '''
 Midterm 6 - Volleyball
 Week 10 - Volleyball
+https://ejudge.it.kmitl.ac.th/problem/8274
 '''
 
 DEAL_SCORE = 24

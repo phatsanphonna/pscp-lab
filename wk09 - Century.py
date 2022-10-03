@@ -1,4 +1,7 @@
-'''Week 9 - Century'''
+'''
+Week 9 - Century
+https://ejudge.it.kmitl.ac.th/problem/8262
+'''
 
 
 def calculate_century(year: int):

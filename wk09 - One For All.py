@@ -1,4 +1,7 @@
-'''Week 8 - One For All'''
+'''
+Week 9 - One For All
+https://ejudge.it.kmitl.ac.th/problem/8252
+'''
 
 
 def main():

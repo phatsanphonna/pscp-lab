@@ -1,6 +1,7 @@
 '''
 [Recommend]
 Week 8 - Elo
+https://ejudge.it.kmitl.ac.th/problem/8240
 '''
 
 

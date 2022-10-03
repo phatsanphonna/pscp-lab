@@ -1,4 +1,7 @@
-'''Week 8 - ProgressiveTax'''
+'''
+Week 8 - ProgressiveTax
+https://ejudge.it.kmitl.ac.th/problem/8247
+'''
 
 
 def main():

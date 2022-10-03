@@ -1,4 +1,7 @@
-'''Week 8 - RuleOfThree'''
+'''
+Week 8 - RuleOfThree
+https://ejudge.it.kmitl.ac.th/problem/8234
+'''
 
 
 def main():

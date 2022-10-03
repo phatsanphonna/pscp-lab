@@ -1,6 +1,7 @@
 '''
 <Recommend>
 Week 9 - Squid Game 3 - Tug-of-War
+https://ejudge.it.kmitl.ac.th/problem/8261
 '''
 
 

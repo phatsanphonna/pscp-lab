@@ -1,4 +1,7 @@
-'''Week 9 - Saint Seiya'''
+'''
+Week 9 - Saint Seiya
+https://ejudge.it.kmitl.ac.th/problem/8266
+'''
 
 
 def main():
