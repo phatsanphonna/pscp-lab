@@ -4,7 +4,13 @@ Problem Solving and Computer Programming (PSCP/PSIT) code.
 ## Prefix and Suffix
 #### wk{x}
 - Week {x}
-- To show where this problem comes from whick week.
+- To show where this problem comes from which week.
+
+#### wk{x}m{y}
+- Week {x}
+- Midterm {y}
+- To show where this problem comes from which week.
+- Part of midterm exams.
 
 #### (R)
 - Recommend
