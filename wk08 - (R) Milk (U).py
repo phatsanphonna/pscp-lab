@@ -23,7 +23,7 @@ def main():
 
     total_promotion_bottles = 0
 
-    while total_caps >= promotion and total_caps > 0:
+    while total_caps >= promotion:
         promotion_bottles, caps_left = divmod(total_bottles, promotion)
 
         total_promotion_bottles += promotion_bottles * exchange_promotion
