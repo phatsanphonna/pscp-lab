@@ -1,6 +1,6 @@
 '''
-Midterm 5 - Coke
-Week 10 - Coke
+Midterm 5 - Coke (without loops)
+Week 10 - Coke (without loops)
 https://ejudge.it.kmitl.ac.th/problem/8273
 '''
 
@@ -13,20 +13,17 @@ def main():
     promo_price = int(input())
     get_at_least = int(input())
 
-    total_price = 0
-
     if promo_caps == 0:
         print(normal_price * get_at_least)
         return
 
-    for i in range(get_at_least):
-        if i != 0 and i % promo_caps == 0:
-            total_price += promo_price
-            continue
+    promo_bottle, fraction = divmod(get_at_least - 1, promo_caps)
+    normal_bottle = get_at_least - promo_bottle
 
-        total_price += normal_price
+    total_price = normal_bottle * normal_price + promo_price * promo_bottle
+    total_price += normal_bottle
 
-    # print(normal_bottle, promo_bottle)
+    # print(normal_bottle, discount_bottle)
     print(total_price)
 
 
