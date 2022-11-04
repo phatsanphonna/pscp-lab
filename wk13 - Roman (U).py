@@ -18,7 +18,7 @@ def main():
     '''Main Function'''
 
     roman_number = input()
-    
+
     total = []
 
     for index, char in enumerate(roman_number):
@@ -27,6 +27,11 @@ def main():
             continue
 
         if char == 'I':
-            if roman_number[index - 1] == 'I':
-                total.pop()
-                total.append()
+            if roman_number[index + 1] != 'I':
+                pop_char = total.pop()
+                total.append(ROMAN_CHAR[pop_char] - 1)
+
+        print(sum(total))
+
+
+main()

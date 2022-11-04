@@ -13,7 +13,7 @@ def main():
     max_number = max([num_1, num_2])
     gcd_value = 0
 
-    for i in range(max_number, 0):
+    for i in range(max_number, 1, -1):
         if num_1 % i == 0 and num_2 % i == 0:
             gcd_value = i
             break

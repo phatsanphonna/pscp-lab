@@ -13,20 +13,12 @@ def main():
         print('NO')
         return
 
-    fully_mod_value = []
-
-    for i in range(1, number+1):
+    for i in range(2, number):
         if number % i == 0:
-            fully_mod_value.append(i)
+            print('NO')
+            return
 
-            if len(fully_mod_value) > 2:
-                print('NO')
-                return
-
-    if len(fully_mod_value) > 2:
-        print('NO')
-    else:
-        print('YES')
+    print('YES')
 
 
 main()
