@@ -4,6 +4,7 @@ https://ejudge.it.kmitl.ac.th/problem/8357
 '''
 
 
+
 def main():
     '''Main Function'''
 
@@ -13,7 +14,7 @@ def main():
         print('NO')
         return
 
-    for i in range(2, number):
+    for i in range(2, int(number**0.5)+1):
         if number % i == 0:
             print('NO')
             return
