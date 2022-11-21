@@ -10,10 +10,10 @@ def main():
     num_1 = abs(int(input()))
     num_2 = abs(int(input()))
 
-    max_number = max([num_1, num_2])
+    min_number = min([num_1, num_2])
     gcd_value = 0
 
-    for i in range(1, max_number+1):
+    for i in range(1, min_number+1):
         if num_1 % i == 0 and num_2 % i == 0:
             gcd_value = i
 
