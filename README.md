@@ -1,5 +1,5 @@
-# Problem Solving and Computer Programming Lab
-Problem Solving and Computer Programming (PSCP/PSIT) code.
+# School of IT, KMITL - Hell Lab of Problem Solving and Computer Programming with Python (1/2565)
+Code of Problem Solving and Computer Programming (PSCP/PSIT).
 
 ## Prefix and Suffix
 #### wk{x}
