@@ -18,3 +18,5 @@ Code of Problem Solving and Computer Programming (PSCP/PSIT).
 
 #### (U)
 - Unfinished or unsolve problem
+
+![How I deal with my problems.](https://i.imgflip.com/3b43a2.jpg)
